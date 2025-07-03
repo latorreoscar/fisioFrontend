@@ -1,0 +1,10 @@
+{
+  "defaultFree":[
+    { "hora": "17:00-17:30", "disponible": true, "split": 0},
+    { "hora": "17:30-18:00", "disponible": true, "split": 1},
+    { "hora": "18:00-18:30", "disponible": true, "split": 2 },
+    { "hora": "18:30-19:00", "disponible": true, "split": 3 },
+    { "hora": "19:00-19:30", "disponible": true, "split": 4 }
+  ]
+}
+
