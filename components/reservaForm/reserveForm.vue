@@ -54,9 +54,8 @@ const form = useForm({
   }
 })
 
-// ✅ URL corregida con protocolo
-const API_URL_RESERVAS = "http://localhost:8080/api/reservas"
-const API_URL_SPLITS = "http://localhost:8080/api/reservas/getAllSplits"
+const API_URL_RESERVAS = "https://fisio-backend-xps-rel1.vercel.app/api/reservas/create"
+const API_URL_SPLITS = "https://fisio-backend-xps-rel1.vercel.app/api/reservas/timeframes"
 
 const isSubmitting = ref(false)
 const submitError = ref<string | null>(null)
@@ -233,7 +232,6 @@ onBeforeMount(async () =>{
     <div class="w-82 pl-4 pr-4 pb-4">
       <FormField name="dob">
         <FormItem>
-          <FormLabel>Selecciona la fecha *</FormLabel>
           <Calendar calendar-label="Fecha de la cita" initial-focus :min-value="today(getLocalTimeZone())"
             :max-value="new CalendarDate(2200, 1, 1)" @update:model-value="(v) => {
               if (v) {

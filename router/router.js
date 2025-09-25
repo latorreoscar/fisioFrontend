@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import home from "../layouts/home.vue";
-import privatePage from "../layouts/privatePage.vue";
+import home from "../pages/home.vue";
+import privatePage from "../pages/privatePage.vue";
+import landingPage from "../pages/landingPage.vue";
 
 const routes = [
   {
@@ -13,6 +14,11 @@ const routes = [
     name: "private",
     component: privatePage,
   },
+  {
+    path: "/landing",
+    name: "landing",
+    component: landingPage,
+  }
 ];
 
 export default defineNuxtPlugin((nuxtApp) => {
