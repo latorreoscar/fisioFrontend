@@ -11,7 +11,8 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from '@/components/ui/drawer'
-import ReserveForm from '@/components/reservaForm/reserveForm.vue'
+import ReserveForm from '~/components/forms/reserveForm.vue'
+import {Slot} from "reka-ui";
 
 const props = defineProps({
   isOpen: {
@@ -21,6 +22,22 @@ const props = defineProps({
   showTrigger: {
     type: Boolean,
     default: true
+  },
+  triggerText: {
+    type: String,
+    default: 'Abrir'
+  },
+  triggerVariant: {
+    type: String,
+    default: 'outline'
+  },
+  title: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String,
+    default: ''
   }
 })
 
@@ -41,7 +58,7 @@ watch(isDrawerOpen, (newValue) => {
   <Drawer v-model:open="isDrawerOpen">
     <DrawerTrigger v-if="showTrigger" as-child>
       <Button variant="outline" class="cursor-pointer">
-        Reserva
+        {{ triggerText }}
       </Button>
     </DrawerTrigger>
 
@@ -49,15 +66,15 @@ watch(isDrawerOpen, (newValue) => {
       <div class="mx-auto w-full max-w-7xl h-full flex flex-col overflow-hidden">
         <!-- Header fijo -->
         <div class="flex-shrink-0 px-4 lg:px-6 pt-4 pb-3 border-b">
-          <h2 class="text-xl lg:text-2xl font-semibold">Agendar Cita</h2>
+          <h2 class="text-xl lg:text-2xl font-semibold">{{title}}</h2>
           <p class="text-sm text-muted-foreground mt-1">
-            Completa el formulario para reservar tu cita
+            {{description}}
           </p>
         </div>
 
         <!-- Contenido con scroll -->
         <div class="flex-1 overflow-y-auto px-4 lg:px-6 py-6">
-          <ReserveForm />
+          <slot />
         </div>
       </div>
     </DrawerContent>

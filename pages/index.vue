@@ -38,16 +38,35 @@
 
             <div class="flex flex-col sm:flex-row gap-6">
               <button
-                  @click="openBooking"
+                  @click="isReserveDrawerOpen = true"
                   class="group bg-gradient-to-r from-teal-500 to-teal-400 hover:from-teal-600 hover:to-teal-500 text-white px-8 py-4 rounded-full font-bold text-base transition-all duration-300 transform hover:scale-105 pulse-glow relative overflow-hidden"
               >
                 <span class="relative z-10">Reservar Mi Cita</span>
                 <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-teal-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
 
-              <button class="max-w-76 text-teal-500 hover:text-teal-600 px-6 py-4 font-bold text-base transition-all duration-300 border-2 border-teal-200 hover:border-teal-400 rounded-full hover:bg-teal-50">
-                ¿Dudas en tu recuperación?¡Escríbenos!
+              <DrawerMain
+                  v-model:is-open="isReserveDrawerOpen"
+                  :show-trigger="false"
+                  title="Agendar Cita"
+                  description="Completa el formulario para reservar tu cita"
+              >
+                <ReserveForm />
+              </DrawerMain>
+
+              <button
+                  @click="isDudasDrawerOpen = true"
+                  class="max-w-76 text-teal-500 hover:text-teal-600 px-6 py-4 font-bold text-base transition-all duration-300 border-2 border-teal-200 hover:border-teal-400 rounded-full hover:bg-teal-50">
+                ¿Dudas en tu recuperación?
               </button>
+              <DrawerMain
+                  v-model:is-open="isDudasDrawerOpen"
+                  :show-trigger="false"
+                  title="Cuéntanos tu caso..."
+                  description="Nos pondremos en contacto contigo para concretar un plan adaptado a tu situación."
+              >
+                <ContactForm />
+              </DrawerMain>
             </div>
           </div>
 
@@ -211,7 +230,7 @@
                   <div class="relative inline-block">
                     <div class="absolute -inset-4 bg-gradient-to-r from-teal-200 to-teal-300 rounded-full blur-lg opacity-30 pulse-glow"></div>
                     <button
-                        @click="openBooking"
+                        @click="isReserveDrawerOpen = true"
                         class="relative bg-gradient-to-r from-teal-500 to-teal-400 hover:from-teal-600 hover:to-teal-500 text-white px-12 py-5 rounded-full font-bold text-xl transition-all duration-300 transform hover:scale-110 shadow-2xl"
                     >
                       Reservar Mi Cita Ahora
@@ -240,6 +259,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import DrawerMain from '~/components/drawer/DrawerMain.vue'
+import ReserveForm from '~/components/forms/reserveForm.vue'
+import ContactForm from "~/components/forms/contactForm.vue";
 
 const currentSlide = ref(0)
 const slides = ref([
@@ -248,8 +269,8 @@ const slides = ref([
   { title: 'Comenzar' }
 ])
 
-// Estados del drawer de reserva
-const isBookingDrawerOpen = ref(false)
+const isReserveDrawerOpen = ref(false)
+const isDudasDrawerOpen = ref(false)
 
 // Funciones del carousel
 let autoSlideInterval = null
