@@ -17,7 +17,7 @@
             <div class="space-y-6">
               <div class="inline-block">
                 <span class="text-sm font-medium text-teal-600 bg-teal-50 px-4 py-2 rounded-full border border-teal-100">
-                  Especialistas en Bienestar
+                  Especialistas en tu bienestar
                 </span>
               </div>
 
@@ -29,8 +29,10 @@
               </h1>
 
               <p class="text-lg text-gray-600 leading-relaxed max-w-lg">
-                Fisioterapia revolucionaria que combina técnicas avanzadas con un toque humano único.
-                <strong class="text-teal-500">Porque tu bienestar merece algo extraordinario.</strong>
+                Sabemos que detrás de cada consulta hay una persona.
+                Por eso unimos las técnicas mas avanzadas con la cercanía que mereces.
+                <strong class="text-teal-500">Tu bienestar merece algo extraordinario.</strong>
+
               </p>
             </div>
 
@@ -43,8 +45,8 @@
                 <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-teal-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
 
-              <button class="text-teal-500 hover:text-teal-600 px-6 py-4 font-bold text-base transition-all duration-300 border-2 border-teal-200 hover:border-teal-400 rounded-full hover:bg-teal-50">
-                Descubrir Más →
+              <button class="max-w-76 text-teal-500 hover:text-teal-600 px-6 py-4 font-bold text-base transition-all duration-300 border-2 border-teal-200 hover:border-teal-400 rounded-full hover:bg-teal-50">
+                ¿Dudas en tu recuperación?¡Escríbenos!
               </button>
             </div>
           </div>
@@ -165,7 +167,7 @@
                       </div>
                       <div>
                         <h3 class="text-xl font-bold text-gray-800 mb-2">Tratamiento Personalizado</h3>
-                        <p class="text-gray-600">Cada sesión está diseñada específicamente para tus necesidades y objetivos de recuperación.</p>
+                        <p class="text-gray-600">El tratamiento y las sesiones del mismo se desarrollan tras una valoración inicial y pueden variar para ajustarse a tus necesidades y objetivos de recuperación.</p>
                       </div>
                     </div>
 
@@ -175,7 +177,7 @@
                       </div>
                       <div>
                         <h3 class="text-xl font-bold text-gray-800 mb-2">Técnicas Avanzadas</h3>
-                        <p class="text-gray-600">Combinamos métodos tradicionales con las últimas innovaciones en fisioterapia.</p>
+                        <p class="text-gray-600">Implementamos técnicas avanzadas y basadas en la evidencia para optimizar cada proceso de tu recuperación.</p>
                       </div>
                     </div>
 
@@ -224,20 +226,11 @@
             </div>
           </div>
         </div>
-
-        <!-- Updated navigation dots to use teal colors -->
-        <div class="flex justify-center mt-16">
-          <div class="text-center bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg border border-teal-100">
-            <span class="text-lg font-bold bg-gradient-to-r from-teal-500 to-teal-400 bg-clip-text text-transparent">
-              {{ currentSlide + 1 }} / {{ slides.length }}
-            </span>
-          </div>
-        </div>
       </div>
     </section>
 
     <!-- Drawer de Reserva de Cita - Tu componente existente -->
-    <DrawerButton
+    <DrawerMain
         v-model:isOpen="isBookingDrawerOpen"
         :showTrigger="false"
     />
@@ -246,7 +239,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-import DrawerButton from '@/components/drawer/drawerButton.vue'
+import DrawerMain from '~/components/drawer/DrawerMain.vue'
 
 const currentSlide = ref(0)
 const slides = ref([
@@ -272,7 +265,7 @@ const previousSlide = () => {
 const startAutoSlide = () => {
   autoSlideInterval = setInterval(() => {
     nextSlide()
-  }, 7000)
+  }, 12000)
 }
 
 const stopAutoSlide = () => {

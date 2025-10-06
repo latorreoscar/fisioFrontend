@@ -351,3 +351,21 @@
     }
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ocultar scrollbar en Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* Mantener scroll funcional pero sin barra visible */
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;     /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;             /* Safari y Chrome */
+}
