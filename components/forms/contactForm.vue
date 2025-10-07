@@ -37,7 +37,7 @@ const form = useForm({
   }
 })
 
-const API_URL_DUDAS = "https://fisio-backend-xps-rel1.vercel.ap/api/contact/newRequest"
+const API_URL_DUDAS = "https://fisio-backend-xps-rel1.vercel.app/api/contact/newRequest"
 
 const isSubmitting = ref(false)
 const submitError = ref<string | null>(null)
