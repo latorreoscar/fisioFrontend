@@ -330,13 +330,26 @@ const onSubmit = form.handleSubmit(
             <div class="flex items-start gap-3">
               <Checkbox id="terms1" :checked="value" @click="() => handleChange(!value)" class="mt-1" />
               <div class="grid gap-1.5 leading-none">
-                <label for="terms1"
+                <!-- <label for="terms1"
                        class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                   Acepto los términos y condiciones *
                 </label>
                 <p class="text-xs text-muted-foreground">
                   Aceptas nuestros Términos de Servicio y Política de Privacidad.
+                </p> -->
+
+
+                <label for="terms1"
+                       class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                  Acepto los términos y condiciones *
+                </label>
+                <p class="text-xs text-muted-foreground">
+                  Aceptas nuestros
+                  <NuxtLink to="/terminos" class="underline text-teal-700 hover:text-teal-600" target="_blank">
+                    Términos de Servicio y Política de Privacidad
+                  </NuxtLink>.
                 </p>
+
               </div>
             </div>
             <FormMessage />
