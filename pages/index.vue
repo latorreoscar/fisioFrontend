@@ -36,10 +36,10 @@
               </p>
             </div>
 
-            <div class="flex flex-col sm:flex-row gap-6">
+              <div class="flex flex-col sm:flex-row gap-6">
               <button
                   @click="isReserveDrawerOpen = true"
-                  class="group bg-gradient-to-r from-teal-500 to-teal-400 hover:from-teal-600 hover:to-teal-500 text-white px-8 py-4 rounded-full font-bold text-base transition-all duration-300 transform hover:scale-105 pulse-glow relative overflow-hidden"
+                  class="group bg-gradient-to-r from-teal-500 to-teal-400 hover:from-teal-600 hover:to-teal-500 text-white px-6 sm:px-8 py-4 rounded-full font-bold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 pulse-glow relative overflow-hidden min-w-[200px] sm:min-w-[220px]"
               >
                 <span class="relative z-10">Reservar Mi Cita</span>
                 <div class="absolute inset-0 bg-gradient-to-r from-teal-400 to-teal-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -56,9 +56,10 @@
 
               <button
                   @click="isDudasDrawerOpen = true"
-                  class="max-w-76 text-teal-500 hover:text-teal-600 px-6 py-4 font-bold text-base transition-all duration-300 border-2 border-teal-200 hover:border-teal-400 rounded-full hover:bg-teal-50">
+                  class="text-teal-500 hover:text-teal-600 px-6 sm:px-8 py-4 font-bold text-sm sm:text-base transition-all duration-300 border-2 border-teal-200 hover:border-teal-400 rounded-full hover:bg-teal-50 min-w-[200px] sm:min-w-[220px]">
                 ¿Dudas en tu recuperación?
               </button>
+
               <DrawerMain
                   v-model:is-open="isDudasDrawerOpen"
                   :show-trigger="false"
@@ -129,12 +130,12 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                   <div class="group relative">
                     <div class="absolute -inset-1 bg-gradient-to-r from-teal-200 to-teal-300 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
-                    <div class="relative bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-teal-50 min-h-[280px] flex flex-col">
-                      <div class="w-16 h-16 bg-gradient-to-br from-teal-100 to-teal-200 rounded-2xl flex items-center justify-center mb-6 morph-animation border border-teal-100">
-                        <div class="w-8 h-8 bg-teal-300 rounded-lg"></div>
+                    <div class="relative bg-white p-6 sm:p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-teal-50 h-[320px] sm:h-[340px] flex flex-col">
+                      <div class="w-6 h-6 sm:w-16 sm:h-16 bg-gradient-to-br from-teal-100 to-teal-200 rounded-2xl flex items-center justify-center mb-6 morph-animation border border-teal-100">
+                        <div class="w-3 h-3 sm:w-8 sm:h-8 bg-teal-300 rounded-lg"></div>
                       </div>
-                      <h3 class="text-2xl font-bold text-gray-800 mb-4">Suelo Pélvico</h3>
-                      <p class="text-gray-600 leading-relaxed flex-grow">
+                      <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-4">Suelo Pélvico</h3>
+                      <p class="text-gray-600 leading-relaxed flex-grow text-sm sm:text-base">
                         Técnicas especializadas para el fortalecimiento y rehabilitación del suelo pélvico con máxima profesionalidad.
                       </p>
                     </div>
@@ -142,12 +143,12 @@
 
                   <div class="group relative">
                     <div class="absolute -inset-1 bg-gradient-to-r from-teal-200 to-teal-300 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
-                    <div class="relative bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-teal-50 min-h-[280px] flex flex-col">
-                      <div class="w-16 h-16 bg-gradient-to-br from-teal-150 to-teal-250 rounded-2xl flex items-center justify-center mb-6 float-animation border border-teal-100">
-                        <div class="w-8 h-8 bg-teal-400 rounded-lg"></div>
+                    <div class="relative bg-white p-6 sm:p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-teal-50 h-[320px] sm:h-[340px] flex flex-col">
+                      <div class="w-6 h-6 sm:w-16 sm:h-16 bg-gradient-to-br from-teal-150 to-teal-250 rounded-2xl flex items-center justify-center mb-6 float-animation border border-teal-100">
+                        <div class="w-3 h-3 sm:w-8 sm:h-8 bg-teal-400 rounded-lg"></div>
                       </div>
-                      <h3 class="text-2xl font-bold text-gray-800 mb-4">Rehabilitación</h3>
-                      <p class="text-gray-600 leading-relaxed flex-grow">
+                      <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-4">Rehabilitación</h3>
+                      <p class="text-gray-600 leading-relaxed flex-grow text-sm sm:text-base">
                         Programas de recuperación personalizados que restauran la funcionalidad y mejoran tu calidad de vida.
                       </p>
                     </div>
@@ -155,17 +156,18 @@
 
                   <div class="group relative">
                     <div class="absolute -inset-1 bg-gradient-to-r from-teal-200 to-teal-300 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-300"></div>
-                    <div class="relative bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-teal-50 min-h-[280px] flex flex-col">
-                      <div class="w-16 h-16 bg-gradient-to-br from-teal-200 to-teal-300 rounded-2xl flex items-center justify-center mb-6 pulse-glow border border-teal-100">
-                        <div class="w-8 h-8 bg-teal-500 rounded-lg"></div>
+                    <div class="relative bg-white p-6 sm:p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-teal-50 h-[320px] sm:h-[340px] flex flex-col">
+                      <div class="w-6 h-6 sm:w-16 sm:h-16 bg-gradient-to-br from-teal-200 to-teal-300 rounded-2xl flex items-center justify-center mb-6 pulse-glow border border-teal-100">
+                        <div class="w-3 h-3 sm:w-8 sm:h-8 bg-teal-500 rounded-lg"></div>
                       </div>
-                      <h3 class="text-2xl font-bold text-gray-800 mb-4">Prevención</h3>
-                      <p class="text-gray-600 leading-relaxed flex-grow">
+                      <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-4">Prevención</h3>
+                      <p class="text-gray-600 leading-relaxed flex-grow text-sm sm:text-base">
                         Estrategias preventivas que mantienen tu cuerpo saludable y previenen futuras lesiones.
                       </p>
                     </div>
                   </div>
                 </div>
+
               </div>
 
               <!-- Experience Slide -->
@@ -177,12 +179,13 @@
                   </p>
                 </div>
 
-                <!-- Added proper max-width and margin for experience section -->
-                <div class="grid lg:grid-cols-1 gap-12 items-center max-w-4xl mx-auto">
+
+<!-- Added proper max-width and margin for experience section -->
+<div class="grid lg:grid-cols-1 gap-12 items-center max-w-4xl mx-auto">
                   <div class="space-y-8">
                     <div class="flex items-start gap-6">
-                      <div class="w-12 h-12 bg-gradient-to-br from-teal-100 to-teal-200 rounded-full flex items-center justify-center flex-shrink-0 float-animation border border-teal-100">
-                        <div class="w-6 h-6 bg-teal-400 rounded-full"></div>
+                      <div class="w-6 h-6 sm:w-12 sm:h-12 bg-gradient-to-br from-teal-100 to-teal-200 rounded-full flex items-center justify-center flex-shrink-0 float-animation border border-teal-100">
+                        <div class="w-3 h-3 sm:w-6 sm:h-6 bg-teal-400 rounded-full"></div>
                       </div>
                       <div>
                         <h3 class="text-xl font-bold text-gray-800 mb-2">Tratamiento Personalizado</h3>
@@ -191,8 +194,8 @@
                     </div>
 
                     <div class="flex items-start gap-6">
-                      <div class="w-12 h-12 bg-gradient-to-br from-teal-150 to-teal-250 rounded-full flex items-center justify-center flex-shrink-0 float-animation border border-teal-100" style="animation-delay: 1s;">
-                        <div class="w-6 h-6 bg-teal-500 rounded-full"></div>
+                      <div class="w-6 h-6 sm:w-12 sm:h-12 bg-gradient-to-br from-teal-150 to-teal-250 rounded-full flex items-center justify-center flex-shrink-0 float-animation border border-teal-100" style="animation-delay: 1s;">
+                        <div class="w-3 h-3 sm:w-6 sm:h-6 bg-teal-500 rounded-full"></div>
                       </div>
                       <div>
                         <h3 class="text-xl font-bold text-gray-800 mb-2">Técnicas Avanzadas</h3>
@@ -201,8 +204,8 @@
                     </div>
 
                     <div class="flex items-start gap-6">
-                      <div class="w-12 h-12 bg-gradient-to-br from-teal-200 to-teal-300 rounded-full flex items-center justify-center flex-shrink-0 float-animation border border-teal-100" style="animation-delay: 2s;">
-                        <div class="w-6 h-6 bg-teal-600 rounded-full"></div>
+                      <div class="w-6 h-6 sm:w-12 sm:h-12 bg-gradient-to-br from-teal-200 to-teal-300 rounded-full flex items-center justify-center flex-shrink-0 float-animation border border-teal-100" style="animation-delay: 2s;">
+                        <div class="w-3 h-3 sm:w-6 sm:h-6 bg-teal-600 rounded-full"></div>
                       </div>
                       <div>
                         <h3 class="text-xl font-bold text-gray-800 mb-2">Resultados Comprobados</h3>
@@ -211,6 +214,8 @@
                     </div>
                   </div>
                 </div>
+
+
               </div>
 
               <!-- CTA Slide -->
@@ -231,11 +236,12 @@
                     <div class="absolute -inset-4 bg-gradient-to-r from-teal-200 to-teal-300 rounded-full blur-lg opacity-30 pulse-glow"></div>
                     <button
                         @click="isReserveDrawerOpen = true"
-                        class="relative bg-gradient-to-r from-teal-500 to-teal-400 hover:from-teal-600 hover:to-teal-500 text-white px-12 py-5 rounded-full font-bold text-xl transition-all duration-300 transform hover:scale-110 shadow-2xl"
+                        class="relative bg-gradient-to-r from-teal-500 to-teal-400 hover:from-teal-600 hover:to-teal-500 text-white px-6 sm:px-8 py-4 rounded-full font-bold text-sm sm:text-base transition-all duration-300 transform hover:scale-110 shadow-2xl min-w-[200px] sm:min-w-[220px]"
                     >
                       Reservar Mi Cita Ahora
                     </button>
                   </div>
+
 
                   <p class="text-gray-500 mt-8 text-base">
                     Especialistas en tratamientos de fisioterapia personalizada
