@@ -66,7 +66,7 @@
                   title="Cuéntanos tu caso..."
                   description="Nos pondremos en contacto contigo para concretar un plan adaptado a tu situación."
               >
-                <ContactForm />
+                <ContactForm @close="isDudasDrawerOpen = false" />
               </DrawerMain>
             </div>
           </div>
