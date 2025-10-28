@@ -80,6 +80,8 @@ const onSubmit = form.handleSubmit(
 
         // Cerrar el formulario y navegar a Home
         emit('close')
+        // Mostrar Popup de éxito
+        window.alert('¡Mensaje enviado exitosamente!')
         router.push('/')
 
         setTimeout(() => {
@@ -88,7 +90,10 @@ const onSubmit = form.handleSubmit(
 
       } catch (error) {
         console.error('Error al enviar el formulario:', error)
-        submitError.value = error instanceof Error ? error.message : 'Error desconocido al enviar mensaje'
+        const message = error instanceof Error ? error.message : 'Error desconocido al enviar mensaje'
+        submitError.value = message
+        // Mostrar Popup de error (manteniendo el formulario abierto)
+        window.alert(`No se pudo enviar el mensaje: ${message}`)
       } finally {
         isSubmitting.value = false
       }
