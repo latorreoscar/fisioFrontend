@@ -46,8 +46,8 @@
               </button>
 
               <DrawerMain
-                  v-model:is-open="isReserveDrawerOpen"
-                  :show-trigger="false"
+                  v-model:isOpen="isReserveDrawerOpen"
+                  :showTrigger="false"
                   title="Agendar Cita"
                   description="Completa el formulario para reservar tu cita"
               >
@@ -61,8 +61,8 @@
               </button>
 
               <DrawerMain
-                  v-model:is-open="isDudasDrawerOpen"
-                  :show-trigger="false"
+                  v-model:isOpen="isDudasDrawerOpen"
+                  :showTrigger="false"
                   title="Cuéntanos tu caso..."
                   description="Nos pondremos en contacto contigo para concretar un plan adaptado a tu situación."
               >
@@ -258,6 +258,7 @@
     <DrawerMain
         v-model:isOpen="isBookingDrawerOpen"
         :showTrigger="false"
+        title="Reservar Cita"
     />
   </div>
 </template>
@@ -277,6 +278,7 @@ const slides = ref([
 
 const isReserveDrawerOpen = ref(false)
 const isDudasDrawerOpen = ref(false)
+const isBookingDrawerOpen = ref(false)
 
 // Funciones del carousel
 let autoSlideInterval = null
