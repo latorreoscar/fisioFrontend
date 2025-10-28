@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useForm, useField } from 'vee-validate'
+import { useForm } from 'vee-validate'
 import { toTypedSchema } from '@vee-validate/zod'
 import * as z from 'zod'
 import { Input } from '@/components/ui/input'
@@ -8,6 +8,7 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { Calendar } from '@/components/ui/calendar'
 import { CalendarDate, getLocalTimeZone, today } from '@internationalized/date'
 import { computed, ref, onBeforeMount } from 'vue'
+import { useRouter } from 'vue-router'
 import { Checkbox } from '@/components/ui/checkbox'
 import {
   FormControl,
@@ -26,7 +27,6 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import citasMock from '@/assets/mocks/citasMock.json'
-import {DrawerDescription} from "~/components/ui/drawer";
 
 const formSchema = toTypedSchema(z.object({
   Nombre: z.string().min(2, 'Mínimo 2 caracteres').max(50),
@@ -86,6 +86,10 @@ function checkAvailableHours(selectedDate: string): void {
 }
 
 const { setFieldValue } = form
+
+const emit = defineEmits<{ (e: 'close'): void }>()
+
+const router = useRouter()
 
 onBeforeMount(async () => {
   const defaultDay = citasMock['defaultFree' as keyof typeof citasMock]
@@ -156,16 +160,25 @@ const onSubmit = form.handleSubmit(
         console.log('Cita creada exitosamente:', result)
 
         submitSuccess.value = true
+        // Cerrar el formulario (p. ej., Drawer/Dialog) notificando al componente padre
+        emit('close')
+
+        // Mostrar Popup de éxito
+        window.alert('¡Cita agendada exitosamente!')
+
+        // Redirigir a la página de inicio
+        router.push('/')
+
+        // Resetear estado interno por si el componente sigue montado
         form.resetForm()
         availableHours.value = [...allDefaultHours.value]
 
-        setTimeout(() => {
-          submitSuccess.value = false
-        }, 5000)
-
       } catch (error) {
         console.error('Error al enviar el formulario:', error)
-        submitError.value = error instanceof Error ? error.message : 'Error desconocido al crear la cita'
+        const message = error instanceof Error ? error.message : 'Error desconocido al crear la cita'
+        submitError.value = message
+        // Mostrar Popup de error (manteniendo el formulario abierto)
+        window.alert(`No se pudo agendar la cita: ${message}`)
       } finally {
         isSubmitting.value = false
       }

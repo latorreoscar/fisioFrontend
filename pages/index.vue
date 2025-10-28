@@ -51,7 +51,7 @@
                   title="Agendar Cita"
                   description="Completa el formulario para reservar tu cita"
               >
-                <ReserveForm />
+                <ReserveForm @close="isReserveDrawerOpen = false" />
               </DrawerMain>
 
               <button

@@ -65,11 +65,21 @@ watch(isDrawerOpen, (newValue) => {
     <DrawerContent class="max-h-[95vh] lg:max-h-[90vh]">
       <div class="mx-auto w-full max-w-7xl h-full flex flex-col overflow-hidden">
         <!-- Header fijo -->
-        <div class="flex-shrink-0 px-4 lg:px-6 pt-4 pb-3 border-b">
+        <div class="relative flex-shrink-0 px-4 lg:px-6 pt-4 pb-3 border-b">
           <h2 class="text-xl lg:text-2xl font-semibold">{{title}}</h2>
           <p class="text-sm text-muted-foreground mt-1">
             {{description}}
           </p>
+          <!-- Close control for the Drawer -->
+          <DrawerClose as-child>
+            <button
+              type="button"
+              class="absolute right-4 top-4 inline-flex h-8 w-8 items-center justify-center rounded-md border border-input bg-background text-sm font-medium shadow-sm hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+              aria-label="Cerrar"
+            >
+              ✕
+            </button>
+          </DrawerClose>
         </div>
 
         <!-- Contenido con scroll -->
