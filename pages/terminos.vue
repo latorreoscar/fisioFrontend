@@ -3,7 +3,9 @@
       <h1 class="text-2xl md:text-3xl font-semibold text-gray-900">
         Términos de Servicio y Política de Privacidad
       </h1>
-  
+      <div>
+          <NuxtLink to="/" class="text-teal-700 underline hover:text-teal-600">Volver al inicio</NuxtLink>
+        </div> 
       <div class="prose prose-sm md:prose-base max-w-none">
         <h2>SERVICIO DE FISIOTERAPIA MARÍA LATORRE</h2>
         <hr>
