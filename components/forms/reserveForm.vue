@@ -269,6 +269,8 @@ const onSubmit = form.handleSubmit(
                 initial-focus
                 :min-value="today(getLocalTimeZone())"
                 :max-value="new CalendarDate(2200, 1, 1)"
+                :week-starts-on="0"
+                locale="es-ES"
                 @update:model-value="(v) => {
                   if (v) {
                     setFieldValue('dob', v.toString())
@@ -330,13 +332,18 @@ const onSubmit = form.handleSubmit(
             <div class="flex items-start gap-3">
               <Checkbox id="terms1" :checked="value" @click="() => handleChange(!value)" class="mt-1" />
               <div class="grid gap-1.5 leading-none">
+
                 <label for="terms1"
                        class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                   Acepto los términos y condiciones *
                 </label>
                 <p class="text-xs text-muted-foreground">
-                  Aceptas nuestros Términos de Servicio y Política de Privacidad.
+                  Aceptas nuestros
+                  <NuxtLink to="/terminos" class="underline text-teal-700 hover:text-teal-600" target="_blank">
+                    Términos de Servicio y Política de Privacidad
+                  </NuxtLink>.
                 </p>
+
               </div>
             </div>
             <FormMessage />
@@ -356,3 +363,32 @@ const onSubmit = form.handleSubmit(
     </div>
   </form>
 </template>
+
+<style scoped>
+/* Target weekend days in the calendar */
+:deep(.calendar-cell[data-weekend="true"]) {
+  color: red;
+  background-color: #fac5c5; /* soft red background */
+}
+
+/* Alternative selector if the above doesn't work */
+:deep([data-slot="calendar-cell"]:nth-child(6)),
+:deep([data-slot="calendar-cell"]:nth-child(7)) {
+  color: red;
+  background-color: #fac5c5; /* soft red background */
+}
+
+/* Target weekend day headers (S and D) */
+:deep([data-slot="calendar-head-cell"]:nth-child(6)),
+:deep([data-slot="calendar-head-cell"]:nth-child(7)) {
+  color: red;
+  background-color: #fac5c5; /* soft red background */
+}
+
+/* Alternative selector for weekend headers */
+:deep(.calendar-head-cell:nth-child(6)),
+:deep(.calendar-head-cell:nth-child(7)) {
+  color: red;
+  background-color: #fac5c5; /* soft red background */
+}
+</style>
