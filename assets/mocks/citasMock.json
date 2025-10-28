@@ -17,16 +17,10 @@
     { "hora": "16:00-16:30", "disponible": true, "split": 14},
     { "hora": "16:30-17:00", "disponible": true, "split": 15},
     { "hora": "17:00-17:30", "disponible": true, "split": 16},
-    { "hora": "17:00-17:30", "disponible": true, "split": 17},
-    { "hora": "17:00-17:30", "disponible": true, "split": 18},
-    { "hora": "17:00-17:30", "disponible": true, "split": 19},
-    { "hora": "17:00-17:30", "disponible": true, "split": 20},
-    { "hora": "17:00-17:30", "disponible": true, "split": 21},
-    { "hora": "17:00-17:30", "disponible": true, "split": 22},
-    { "hora": "17:30-18:00", "disponible": true, "split": 23},
-    { "hora": "18:00-18:30", "disponible": true, "split": 24 },
-    { "hora": "18:30-19:00", "disponible": true, "split": 25 },
-    { "hora": "19:00-19:30", "disponible": true, "split": 26 }
+    { "hora": "17:30-18:00", "disponible": true, "split": 17},
+    { "hora": "18:00-18:30", "disponible": true, "split": 18 },
+    { "hora": "18:30-19:00", "disponible": true, "split": 19 },
+    { "hora": "19:00-19:30", "disponible": true, "split": 20 }
   ]
 }
 
