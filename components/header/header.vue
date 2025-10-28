@@ -51,6 +51,17 @@ const components: { title: string, href: string, description: string }[] = [
 
 <template>
   <div class="w-full">
+    <!-- Banner Phys10 -->
+    <div class="w-full flex justify-center items-center py-2">
+      <a href="https://www.phys10.es" target="_blank" rel="noopener noreferrer" aria-label="Phys10">
+        <img
+            src="https://phys10.es/wp-content/uploads/2025/09/phys10-logo-completo.svg"
+            alt="Phys10 logo"
+            class="h-[180px] w-auto"
+        />
+      </a>
+    </div>
+
     <div class="flex justify-between md:mx-4 items-center h-20">
       <!-- Logo - Tamaño ajustado -->
       <div class="flex gap-3 items-center flex-shrink-0 max-h-16 overflow-hidden">
