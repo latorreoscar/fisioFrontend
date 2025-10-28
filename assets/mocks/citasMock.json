@@ -1,10 +1,32 @@
 {
   "defaultFree":[
-    { "hora": "17:00-17:30", "disponible": true, "split": 0},
-    { "hora": "17:30-18:00", "disponible": true, "split": 1},
-    { "hora": "18:00-18:30", "disponible": true, "split": 2 },
-    { "hora": "18:30-19:00", "disponible": true, "split": 3 },
-    { "hora": "19:00-19:30", "disponible": true, "split": 4 }
+    { "hora": "09:00-09:30", "disponible": true, "split": 0},
+    { "hora": "09:30-10:00", "disponible": true, "split": 1},
+    { "hora": "10:00-10:30", "disponible": true, "split": 2},
+    { "hora": "10:30-11:00", "disponible": true, "split": 3},
+    { "hora": "11:00-11:30", "disponible": true, "split": 4},
+    { "hora": "11:30-12:00", "disponible": true, "split": 5},
+    { "hora": "12:00-12:30", "disponible": true, "split": 6},
+    { "hora": "12:30-13:00", "disponible": true, "split": 7},
+    { "hora": "13:00-13:30", "disponible": true, "split": 8},
+    { "hora": "13:30-14:00", "disponible": true, "split": 9},
+    { "hora": "14:00-14:30", "disponible": true, "split": 10},
+    { "hora": "14:30-15:00", "disponible": true, "split": 11},
+    { "hora": "15:00-15:30", "disponible": true, "split": 12},
+    { "hora": "15:30-16:00", "disponible": true, "split": 13},
+    { "hora": "16:00-16:30", "disponible": true, "split": 14},
+    { "hora": "16:30-17:00", "disponible": true, "split": 15},
+    { "hora": "17:00-17:30", "disponible": true, "split": 16},
+    { "hora": "17:00-17:30", "disponible": true, "split": 17},
+    { "hora": "17:00-17:30", "disponible": true, "split": 18},
+    { "hora": "17:00-17:30", "disponible": true, "split": 19},
+    { "hora": "17:00-17:30", "disponible": true, "split": 20},
+    { "hora": "17:00-17:30", "disponible": true, "split": 21},
+    { "hora": "17:00-17:30", "disponible": true, "split": 22},
+    { "hora": "17:30-18:00", "disponible": true, "split": 23},
+    { "hora": "18:00-18:30", "disponible": true, "split": 24 },
+    { "hora": "18:30-19:00", "disponible": true, "split": 25 },
+    { "hora": "19:00-19:30", "disponible": true, "split": 26 }
   ]
 }
 
