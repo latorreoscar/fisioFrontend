@@ -5,6 +5,7 @@ import * as z from 'zod'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import {type HTMLAttributes, ref} from 'vue'
+import { useRouter } from 'vue-router'
 import { Checkbox } from '@/components/ui/checkbox'
 import {
   FormControl,
@@ -42,6 +43,8 @@ const API_URL_DUDAS = "https://fisio-backend-xps-rel1.vercel.app/api/contact/new
 const isSubmitting = ref(false)
 const submitError = ref<string | null>(null)
 const submitSuccess = ref(false)
+const emit = defineEmits<{ (e: 'close'): void }>()
+const router = useRouter()
 
 const onSubmit = form.handleSubmit(
     async (values) => {
@@ -74,6 +77,10 @@ const onSubmit = form.handleSubmit(
 
         submitSuccess.value = true
         form.resetForm()
+
+        // Cerrar el formulario y navegar a Home
+        emit('close')
+        router.push('/')
 
         setTimeout(() => {
           submitSuccess.value = false
