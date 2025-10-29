@@ -32,15 +32,15 @@
         <hr>
         <h2>2. OBJETO Y ÁMBITO DE APLICACIÓN</h2>
         <h3>2.1 Objeto</h3>
-        <p>Los presentes Términos de Servicio regulan las condiciones de prestación de servicios de fisioterapia y el uso del sitio web de Pelvix Latorre, estableciendo los derechos y obligaciones entre la clínica y sus pacientes/usuarios.</p>
+        <p>Los presentes Términos de Servicio regulan las condiciones de prestación de servicios de fisioterapia y el uso del sitio web de María Latorre, estableciendo los derechos y obligaciones entre la clínica y sus pacientes/usuarios.</p>
         <h3>2.2 Aceptación</h3>
         <p>El acceso y uso de nuestros servicios, ya sea presencial o a través del sitio web, implica la aceptación íntegra de estos términos. Si no está de acuerdo con alguna condición, debe abstenerse de utilizar nuestros servicios.</p>
         <h3>2.3 Modificaciones</h3>
-        <p>Pelvix Latorre se reserva el derecho de modificar estos términos en cualquier momento. Las modificaciones serán comunicadas a través del sitio web y entrarán en vigor inmediatamente tras su publicación.</p>
+        <p>María Latorre se reserva el derecho de modificar estos términos en cualquier momento. Las modificaciones serán comunicadas a través del sitio web y entrarán en vigor inmediatamente tras su publicación.</p>
         <hr>
         <h2>3. SERVICIOS OFRECIDOS</h2>
         <h3>3.1 Servicios de fisioterapia</h3>
-        <p>Pelvix Latorre ofrece servicios especializados en:</p>
+        <p>María Latorre ofrece servicios especializados en:</p>
         <ul>
           <li>Fisioterapia del suelo pélvico</li>
           <li>Fisioterapia uroginecológica</li>
@@ -138,7 +138,7 @@
         <hr>
         <h2>7. PROTECCIÓN DE DATOS PERSONALES</h2>
         <h3>7.1 Responsable del tratamiento</h3>
-        <p>Pelvix Latorre es el responsable del tratamiento de los datos personales de los pacientes.</p>
+        <p>María Latorre es el responsable del tratamiento de los datos personales de los pacientes.</p>
         <h3>7.2 Finalidad del tratamiento</h3>
         <p>Los datos personales se tratan para:</p>
         <ul>
@@ -191,9 +191,9 @@
         <hr>
         <h2>9. RESPONSABILIDAD Y GARANTÍAS</h2>
         <h3>9.1 Responsabilidad profesional</h3>
-        <p>Pelvix Latorre cuenta con seguro de responsabilidad civil profesional que cubre los daños que pudieran derivarse del ejercicio profesional.</p>
+        <p>María Latorre cuenta con seguro de responsabilidad civil profesional que cubre los daños que pudieran derivarse del ejercicio profesional.</p>
         <h3>9.2 Limitaciones de responsabilidad</h3>
-        <p>La responsabilidad de Pelvix Latorre se limita a:</p>
+        <p>La responsabilidad de María Latorre se limita a:</p>
         <ul>
           <li>La prestación de servicios conforme a la lex artis</li>
           <li>Los daños directamente causados por negligencia profesional demostrada</li>
@@ -208,7 +208,7 @@
           <li>Casos de fuerza mayor o circunstancias extraordinarias</li>
         </ul>
         <h3>9.4 Obligación de medios</h3>
-        <p>Los servicios de fisioterapia constituyen una obligación de medios, no de resultados, comprometiéndose Pelvix Latorre a aplicar las técnicas apropiadas según el estado actual de la ciencia.</p>
+        <p>Los servicios de fisioterapia constituyen una obligación de medios, no de resultados, comprometiéndose María Latorre a aplicar las técnicas apropiadas según el estado actual de la ciencia.</p>
         <hr>
         <h2>10. USO DEL SITIO WEB</h2>
         <h3>10.1 Condiciones de acceso</h3>
@@ -248,7 +248,7 @@
           <li>Acudir a los organismos competentes de consumo</li>
         </ul>
         <h3>12.2 Resolución</h3>
-        <p>Pelvix Latorre se compromete a dar respuesta a todas las reclamaciones en un plazo máximo de 30 días.</p>
+        <p>María Latorre se compromete a dar respuesta a todas las reclamaciones en un plazo máximo de 30 días.</p>
         <hr>
         <h2>13. RESOLUCIÓN DE CONFLICTOS</h2>
         <h3>13.1 Mediación</h3>

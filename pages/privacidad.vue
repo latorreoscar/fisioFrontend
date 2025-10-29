@@ -32,7 +32,7 @@
           <hr>
           <h2>2. POLÍTICA DE PRIVACIDAD (RGPD/LOPDGDD)</h2>
           <h3>2.1 Responsable del tratamiento</h3>
-          <p>Pelvix Latorre (ver datos en "1. INFORMACIÓN GENERAL") es responsable del tratamiento de los datos personales recabados a través de este sitio web y en el ámbito de su actividad sanitaria.</p>
+          <p>María Latorre (ver datos en "1. INFORMACIÓN GENERAL") es responsable del tratamiento de los datos personales recabados a través de este sitio web y en el ámbito de su actividad sanitaria.</p>
           <h3>2.2 Categorías de datos tratados</h3>
           <ul>
             <li>Datos identificativos y de contacto (por ejemplo, nombre, email, teléfono).</li>
