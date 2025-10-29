@@ -37,7 +37,7 @@
             <h3 class="font-bold text-teal-800 text-lg mb-4">Contacto</h3>
             <div class="space-y-2 text-sm text-gray-700">
               <p>
-                <a href="mailto:info@pelvixlatorre.es" class="hover:text-teal-600 transition-colors duration-300 inline-flex items-center">
+                <a href="mailto:info@pelvixlatorre.es" class="text-teal-800 hover:text-teal-900 transition-colors duration-300 transform hover:scale-110 inline-flex items-center">
                  info@pelvixlatorre.es
                  <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
@@ -46,7 +46,7 @@
                 </a>
               </p>
               <p>
-                <a href="tel:+34692445742" class="hover:text-teal-600 transition-colors duration-300 inline-flex items-center">
+                <a href="tel:+34692445742" class="text-teal-800 hover:text-teal-900 transition-colors duration-300 transform hover:scale-110 inline-flex items-center">
                   +34 692 445 742
                   <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                     <path d="M2 5.5A2.5 2.5 0 014.5 3h1.1c.6 0 1.13.4 1.28.98l.86 3.2c.14.52-.05 1.08-.48 1.41l-1.02.79a.75.75 0 00-.22.9 12.05 12.05 0 006.78 6.78.75.75 0 00.9-.22l.79-1.02c.34-.43.9-.62 1.41-.48l3.2.86c.58.15.98.68.98 1.28v1.1A2.5 2.5 0 0118.5 21h-1A15.5 15.5 0 012 7.5v-2z"/>
@@ -55,14 +55,13 @@
               </p>
 
               <div class="flex justify-center lg:justify-start mt-3">
-                <a 
+                    <a 
                   href="https://instagram.com/mlatorrefisiosp" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  class="text-teal-600 hover:text-teal-800 transition-colors duration-300 transform hover:scale-110 inline-flex items-center"
-                >
+                  class="text-teal-800 hover:text-teal-900 transition-colors duration-300 transform hover:scale-110 inline-flex items-center">
                   <span>@mlatorrefisiosp</span>
-                  <svg class="ml-2 h-4 w-4 flex-shrink-0" fill="#000000" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-271 273 256 256" xml:space="preserve" stroke="#000000">
+                  <svg class="ml-2 h-4 w-4 flex-shrink-0" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="-271 273 256 256" fill="currentColor" aria-hidden="true">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier"> 
@@ -90,17 +89,17 @@
             <h3 class="font-bold text-teal-800 text-lg mb-4">Legal</h3>
             <div class="space-y-2 text-sm">
               <p>
-                <a href="/cookies" class="text-gray-700 hover:text-teal-600 transition-colors duration-300">
+                <a href="/cookies" class="text-gray-800 hover:text-teal-900 transition-colors duration-300 transform hover:scale-110 inline-flex items-center">
                   Política de Cookies
                 </a>
               </p>
               <p>
-                <a href="/terminos" class="text-gray-700 hover:text-teal-600 transition-colors duration-300">
+                <a href="/terminos" class="text-gray-800 hover:text-teal-900 transition-colors duration-300 transform hover:scale-110 inline-flex items-center">
                   Términos de Servicio
                 </a>
               </p>
               <p>
-                <a href="/privacidad" class="text-gray-700 hover:text-teal-600 transition-colors duration-300">
+                <a href="/privacidad" class="text-gray-800 hover:text-teal-900 transition-colors duration-300 transform hover:scale-110 inline-flex items-center">
                   Protección de Datos
                 </a>
               </p>
