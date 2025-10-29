@@ -94,7 +94,7 @@
 
       <div class="max-w-7xl mx-auto relative z-10">
         <div class="flex justify-center mb-12">
-          <div class="flex gap-4 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-lg border border-teal-100">
+          <div class="flex gap-1 bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-lg border border-teal-100">
             <button
                 v-for="(slide, index) in slides"
                 :key="index"
