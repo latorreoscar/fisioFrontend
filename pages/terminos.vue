@@ -44,7 +44,7 @@
         <ul>
           <li>Fisioterapia del suelo pélvico</li>
           <li>Fisioterapia uroginecológica</li>
-          <li>Fisioterapia obstétrica (preparto y postparto)</li>
+          <li>Fisioterapia obstétrica (embarazo y posparto)</li>
           <li>Fisioterapia en disfunciones sexuales</li>
           <li>Reeducación del suelo pélvico</li>
           <li>Electroestimulación y biofeedback</li>
